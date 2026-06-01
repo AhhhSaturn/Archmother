@@ -1,0 +1,17 @@
+.{
+    .name = .Archmother,
+    .version = "1.0.0",
+    .fingerprint = 0x18a94d85499c8fb,
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .zigcord = .{
+            .url = "git+https://codeberg.org/lipfang/zigcord?ref=main#8dbe512c4bd1cf05a233449be28030cce551f083",
+            .hash = "zigcord-0.11.3-rrOs1jQYCAA6-3omhQ8Tb9oYqMxSTHS7LqOdTxcZbmER",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
