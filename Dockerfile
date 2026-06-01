@@ -12,7 +12,7 @@ COPY src/ src/
 
 RUN zig build -Doptimize=ReleaseFast
 
-FROM scratch
+FROM alpine:latest
 
 COPY --from=builder /app/zig-out/bin/Archmother /Archmother
 
