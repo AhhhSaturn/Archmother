@@ -5,7 +5,8 @@ const random_command = @import("commands/random.zig");
 
 pub const std_options: std.Options = .{ .log_level = switch (@import("builtin").mode) {
     .Debug, .ReleaseSafe => .debug,
-    .ReleaseFast, .ReleaseSmall => .err,
+    .ReleaseFast => .info,
+    .ReleaseSmall => .err,
 } };
 
 pub fn main(init: std.process.Init) !void {
